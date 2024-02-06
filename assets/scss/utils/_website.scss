@@ -1,0 +1,23 @@
+@import "../bases/colors.scss";
+@import "../bases/typography.scss";
+@import "../utils/mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $pure;
+}
+
+img {
+    object-fit: cover;
+}
+
+section {
+    padding: 120px 0px;
+}

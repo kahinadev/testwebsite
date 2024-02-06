@@ -1,0 +1,72 @@
+header {
+    .navbar-brand {
+        .logo {
+            width: 35%;
+        }
+    }
+
+    .toggler {
+        color: $hope-light;
+
+        @media screen and (max-width: $mobile) {
+            right: 15px;
+            position: fixed;
+        }
+    }
+
+    .toggler,
+    .close {
+        font-size: 25px;
+        border: $none--border;
+        background-color: transparent;
+    }
+
+    .offcanvas {
+        border-left: $none--border !important;
+        backdrop-filter: blur(30px);
+        background-image: linear-gradient(to right bottom,
+                #4a6d4a, #577753,
+                #64815c, #728b66,
+                #7f9570);
+
+        .close {
+            color: $pure;
+        }
+
+        .navbar-nav,
+        .reseaux {
+            margin-top: $v-30;
+        }
+
+        .navbar-nav {
+            text-align: center !important;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: 0px !important;
+            }
+
+            .nav-item {
+                .nav-link {
+                    color: $pure;
+                    font-size: 25px;
+                    font-weight: 700;
+                    transition: 0.5s;
+                    text-transform: uppercase;
+                    font-family: $text;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $hope-light;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .reseaux {
+                padding-top: $v-30;
+                border-top: 3px solid $pure;
+            }
+        }
+    }
+}

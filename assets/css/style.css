@@ -1,3 +1,156 @@
+.hope-dark {
+  color: #133613;
+}
 
+.hope-medium {
+  color: #4A6D4A;
+}
+
+.hope-light {
+  color: #7F9570;
+}
+
+.beige {
+  color: #DAD7CD;
+}
+
+.pure {
+  color: #EFF1EF;
+}
+
+.bg-hope-dark {
+  background-color: #133613;
+}
+
+.bg-hope-medium {
+  background-color: #4A6D4A;
+}
+
+.bg-hope-light {
+  background-color: #7F9570;
+}
+
+.bg-beige {
+  background-color: #DAD7CD;
+}
+
+.bg-pure {
+  background-color: #EFF1EF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EFF1EF;
+}
+
+img {
+  object-fit: cover;
+}
+
+section {
+  padding: 120px 0px;
+}
+
+.hope-dark {
+  color: #133613;
+}
+
+.hope-medium {
+  color: #4A6D4A;
+}
+
+.hope-light {
+  color: #7F9570;
+}
+
+.beige {
+  color: #DAD7CD;
+}
+
+.pure {
+  color: #EFF1EF;
+}
+
+.bg-hope-dark {
+  background-color: #133613;
+}
+
+.bg-hope-medium {
+  background-color: #4A6D4A;
+}
+
+.bg-hope-light {
+  background-color: #7F9570;
+}
+
+.bg-beige {
+  background-color: #DAD7CD;
+}
+
+.bg-pure {
+  background-color: #EFF1EF;
+}
+
+header .navbar-brand .logo {
+  width: 35%;
+}
+header .toggler {
+  color: #7F9570;
+}
+@media screen and (max-width: 480px) {
+  header .toggler {
+    right: 15px;
+    position: fixed;
+  }
+}
+header .toggler,
+header .close {
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+}
+header .offcanvas {
+  border-left: none !important;
+  backdrop-filter: blur(30px);
+  background-image: linear-gradient(to right bottom, #4a6d4a, #577753, #64815c, #728b66, #7f9570);
+}
+header .offcanvas .close {
+  color: #EFF1EF;
+}
+header .offcanvas .navbar-nav,
+header .offcanvas .reseaux {
+  margin-top: 30px;
+}
+header .offcanvas .navbar-nav {
+  text-align: center !important;
+}
+@media screen and (max-width: 480px) {
+  header .offcanvas .navbar-nav {
+    margin-top: 0px !important;
+  }
+}
+header .offcanvas .navbar-nav .nav-item .nav-link {
+  color: #EFF1EF;
+  font-size: 25px;
+  font-weight: 700;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-family: "Rajdhani", sans-serif;
+}
+header .offcanvas .navbar-nav .nav-item .nav-link:hover, header .offcanvas .navbar-nav .nav-item .nav-link:focus, header .offcanvas .navbar-nav .nav-item .nav-link:active {
+  color: #7F9570;
+  margin-bottom: 15px;
+}
+header .offcanvas .navbar-nav .reseaux {
+  padding-top: 30px;
+  border-top: 3px solid #EFF1EF;
+}
 
 /*# sourceMappingURL=style.css.map */
