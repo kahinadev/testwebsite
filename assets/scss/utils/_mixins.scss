@@ -1,0 +1,34 @@
+@mixin stroke-title {
+    color: transparent;
+    @include uppercase;
+    font-family: $title;
+    letter-spacing: 1px;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin stroke-dark {
+    @include stroke-title;
+    text-stroke: 1px $hope-dark;
+    -webkit-text-stroke: 1px $hope-dark;
+}
+
+@mixin stroke-light {
+    @include stroke-title;
+    text-stroke: 1px $pure;
+    -webkit-text-stroke: 1px $pure;
+}
+
+@mixin text {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 0.3px;
+    font-family: $text;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 23px;
+    }
+}
