@@ -515,7 +515,7 @@ header .offcanvas .navbar-nav .reseaux {
 }
 @media screen and (max-width: 480px) {
   .card-projet .infos .categories {
-    margin-left: 34% !important;
+    margin-left: 28% !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -528,7 +528,7 @@ header .offcanvas .navbar-nav .reseaux {
 }
 @media screen and (max-width: 480px) {
   .card-projet .infos .aut-cat {
-    margin-left: 24% !important;
+    margin-left: 14% !important;
   }
 }
 @media screen and (max-width: 991px) {
