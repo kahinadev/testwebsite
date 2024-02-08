@@ -28,7 +28,7 @@
     letter-spacing: 0.3px;
     font-family: $text;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet-m) {
         font-size: 23px;
     }
 }

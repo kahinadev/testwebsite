@@ -8,6 +8,7 @@
 
     @media screen and (max-width: $mobile) {
         height: 680px;
+        background-position: right !important;
     }
 
     h1 {
@@ -48,10 +49,12 @@
 }
 
 .about {
+    padding-top: 140px;
     img {
         height: 680px;
 
         @media screen and (max-width: $mobile) {
+            margin-top: 10%;
             height: 320px !important;
         }
 
@@ -59,10 +62,19 @@
             height: 400px;
         }
     }
+
     .pd-lg-5 {
         @media screen and (max-width: $tablet-m) {
             padding: 0 !important;
             margin-top: $v-50 !important;
         }
+    }
+}
+
+.services {
+    .card {
+       @media screen and (max-width: $tablet-m) {
+        margin-bottom: $v-30;
+       }
     }
 }
