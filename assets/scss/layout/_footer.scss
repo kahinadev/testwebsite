@@ -1,0 +1,45 @@
+.footer {
+    padding: 80px 0px;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+
+    @media screen and (max-width: $tablet-m) {
+        padding: 80px 15px;
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-size: 25px;
+        font-weight: 800;
+        font-family: $text;
+    }
+
+    h6 {
+        margin-top: 40px;
+    }
+
+    p,
+    a {
+        font-weight: 300;
+        font-size: 18px !important;
+        font-family: $text !important;
+    }
+
+    .reseaux-title {
+        @media screen and (max-width: $mobile) {
+            margin-top: 40px;
+        }
+    }
+
+    p {
+        margin: 0px;
+    }
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $hope-light;
+        }
+    }
+}
