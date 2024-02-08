@@ -8,7 +8,6 @@
 
     @media screen and (max-width: $mobile) {
         height: 680px;
-        background-position: right !important;
     }
 
     h1 {
@@ -50,6 +49,7 @@
 
 .about {
     padding-top: 140px;
+
     img {
         height: 680px;
 
@@ -73,8 +73,32 @@
 
 .services {
     .card {
-       @media screen and (max-width: $tablet-m) {
-        margin-bottom: $v-30;
-       }
+        @media screen and (max-width: $tablet-m) {
+            margin-bottom: $v-30;
+        }
+    }
+}
+
+.projets {
+    .projets-sec {
+        margin-top: 5%;
+    }
+
+    .text-end {
+        @media screen and (max-width: $mobile) {
+            text-align: left !important;
+            margin: $v-30 0;
+        }
+    }
+
+    .second {
+        @media screen and (max-width: $tablet-m) {
+            margin-top: $v-30;
+        }
+    }
+
+    .three, 
+    .four {
+        margin-top: $v-30;
     }
 }

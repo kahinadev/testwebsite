@@ -5,10 +5,79 @@
         font-size: 30px;
         font-weight: 800;
         font-family: $text;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 25px !important;
+        }
     }
 
     p {
         font-size: 23px;
         margin-top: 10px;
+    }
+}
+
+.card-projet {
+
+    img {
+        height: 406px;
+
+        @media screen and (max-width: $mobile) {
+            height: 320px;
+        }
+    }
+
+    .infos {
+        width: 90%;
+        padding: $v-15;
+        position: absolute;
+        display: flex;
+        margin: -16% 5% 0 5%;
+        background-color: $pure;
+        backdrop-filter: blur(15px);
+        background-color: var(--token-81ab93ff-d515-4aca-b63b-24f83b57a3ab, #eff1efd4);
+
+        @media screen and (max-width: $mobile) {
+            width: 95% !important;
+            margin: -20% 5% 0 3% !important;
+        }
+
+        h4,
+        span {
+            font-size: 18px;
+            text-transform: uppercase;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 16px !important;
+            }
+        }
+
+        span {
+            font-weight: 600;
+        }
+
+        .categories {
+            margin-left: 54%;
+
+            @media screen and (max-width: $mobile) {
+                margin-left: 34% !important;
+            }
+
+            @media screen and (max-width: $tablet-m) {
+                margin-left: 60%;
+            }
+        }
+
+        .aut-cat {
+            margin-left: 45%;
+
+            @media screen and (max-width: $mobile) {
+                margin-left: 24% !important;
+            }
+
+            @media screen and (max-width: $tablet-m) {
+                margin-left: 54%;
+            }
+        }
     }
 }

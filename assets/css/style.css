@@ -93,6 +93,20 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 5rem;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 2.8rem !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  h3 {
+    font-size: 5.4rem;
+  }
+}
+
 p {
   font-size: 26px;
   font-weight: 300;
@@ -260,6 +274,20 @@ h2 {
 @media screen and (max-width: 1280px) {
   h2 {
     font-size: 5rem;
+  }
+}
+
+h3 {
+  font-size: 5rem;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 2.8rem !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  h3 {
+    font-size: 5.4rem;
   }
 }
 
@@ -434,9 +462,79 @@ header .offcanvas .navbar-nav .reseaux {
   font-weight: 800;
   font-family: "Rajdhani", sans-serif;
 }
+@media screen and (max-width: 480px) {
+  .card h3 {
+    font-size: 25px !important;
+  }
+}
 .card p {
   font-size: 23px;
   margin-top: 10px;
+}
+
+.card-projet img {
+  height: 406px;
+}
+@media screen and (max-width: 480px) {
+  .card-projet img {
+    height: 320px;
+  }
+}
+.card-projet .infos {
+  width: 90%;
+  padding: 15px;
+  position: absolute;
+  display: flex;
+  margin: -16% 5% 0 5%;
+  background-color: #EFF1EF;
+  backdrop-filter: blur(15px);
+  background-color: var(--token-81ab93ff-d515-4aca-b63b-24f83b57a3ab, #eff1efd4);
+}
+@media screen and (max-width: 480px) {
+  .card-projet .infos {
+    width: 95% !important;
+    margin: -20% 5% 0 3% !important;
+  }
+}
+.card-projet .infos h4,
+.card-projet .infos span {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .card-projet .infos h4,
+.card-projet .infos span {
+    font-size: 16px !important;
+  }
+}
+.card-projet .infos span {
+  font-weight: 600;
+}
+.card-projet .infos .categories {
+  margin-left: 54%;
+}
+@media screen and (max-width: 480px) {
+  .card-projet .infos .categories {
+    margin-left: 34% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .card-projet .infos .categories {
+    margin-left: 60%;
+  }
+}
+.card-projet .infos .aut-cat {
+  margin-left: 45%;
+}
+@media screen and (max-width: 480px) {
+  .card-projet .infos .aut-cat {
+    margin-left: 24% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .card-projet .infos .aut-cat {
+    margin-left: 54%;
+  }
 }
 
 .btn {
@@ -479,7 +577,6 @@ header .offcanvas .navbar-nav .reseaux {
 @media screen and (max-width: 480px) {
   .introduction {
     height: 680px;
-    background-position: right !important;
   }
 }
 .introduction h1 {
@@ -549,6 +646,25 @@ header .offcanvas .navbar-nav .reseaux {
   .services .card {
     margin-bottom: 30px;
   }
+}
+
+.projets .projets-sec {
+  margin-top: 5%;
+}
+@media screen and (max-width: 480px) {
+  .projets .text-end {
+    text-align: left !important;
+    margin: 30px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .projets .second {
+    margin-top: 30px;
+  }
+}
+.projets .three,
+.projets .four {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
