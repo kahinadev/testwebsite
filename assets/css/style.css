@@ -70,17 +70,17 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2.5rem !important;
+    font-size: 4rem !important;
   }
 }
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 5rem;
+    font-size: 5.2rem;
   }
 }
 
 h2 {
-  font-size: 6.3rem;
+  font-size: 5.5rem;
 }
 @media screen and (max-width: 480px) {
   h2 {
@@ -89,7 +89,7 @@ h2 {
 }
 @media screen and (max-width: 1280px) {
   h2 {
-    font-size: 5.8rem;
+    font-size: 5rem;
   }
 }
 
@@ -129,10 +129,13 @@ p strong {
 }
 
 body {
-  min-height: 100vh;
-  background: #133613;
-  background: linear-gradient(to bottom right, #133613, #214320, #2E512E, #3C5F3C, #4A6D4A);
-  animation: gradient 15s ease infinite;
+  padding: 0 30px;
+  background-color: #EFF1EF;
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0 15px;
+  }
 }
 
 img {
@@ -144,8 +147,25 @@ section {
 }
 @media screen and (max-width: 480px) {
   section {
-    padding: 120px 10px;
+    padding: 140px 0px;
   }
+}
+
+.radius {
+  border-radius: 1.35rem;
+}
+
+.pd-lg-5 {
+  padding: 5em;
+}
+@media screen and (max-width: 480px) {
+  .pd-lg-5 {
+    padding: 3em;
+  }
+}
+
+.max {
+  width: 100%;
 }
 
 .hope-dark {
@@ -220,17 +240,17 @@ h1 {
 }
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2.5rem !important;
+    font-size: 4rem !important;
   }
 }
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 5rem;
+    font-size: 5.2rem;
   }
 }
 
 h2 {
-  font-size: 6.3rem;
+  font-size: 5.5rem;
 }
 @media screen and (max-width: 480px) {
   h2 {
@@ -239,7 +259,7 @@ h2 {
 }
 @media screen and (max-width: 1280px) {
   h2 {
-    font-size: 5.8rem;
+    font-size: 5rem;
   }
 }
 
@@ -260,33 +280,84 @@ p strong {
 }
 
 header {
+  z-index: 99;
   height: 50px;
 }
-header .navbar-brand .logo {
-  width: 35%;
-}
-header .toggler {
-  color: #7F9570;
+header .navbar {
+  width: 15%;
+  border-bottom-right-radius: 30px 30px;
 }
 @media screen and (max-width: 480px) {
-  header .toggler {
-    right: 15px;
-    position: fixed;
+  header .navbar {
+    width: 80% !important;
   }
 }
-header .toggler,
-header .close {
-  font-size: 25px;
+@media screen and (max-width: 991px) {
+  header .navbar {
+    width: 60%;
+  }
+}
+header .navbar .infos-nav {
+  margin-left: 8%;
+}
+@media screen and (max-width: 480px) {
+  header .navbar .infos-nav {
+    margin-left: 3% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .navbar .infos-nav {
+    margin-left: 12%;
+  }
+}
+header .navbar .navbar-brand .logo {
+  width: 60%;
+}
+@media screen and (max-width: 991px) {
+  header .navbar .navbar-brand .logo {
+    width: 50%;
+  }
+}
+header .navbar .toggler {
+  display: flex;
   border: none;
+  cursor: pointer;
+  margin-left: 60%;
+  margin-top: -10%;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
   background-color: transparent;
+}
+@media screen and (max-width: 480px) {
+  header .navbar .toggler {
+    margin-top: -9% !important;
+    margin-left: 50% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .navbar .toggler {
+    margin-left: 50%;
+    margin-top: -8%;
+  }
+}
+header .navbar .toggler .bar {
+  width: 30px;
+  height: 2px;
+  margin: 2px 0;
+  transition: 0.4s;
+  background-color: #7F9570;
 }
 header .offcanvas {
   border-left: none !important;
   backdrop-filter: blur(30px);
-  background-image: linear-gradient(to right bottom, #4a6d4a, #577753, #64815c, #728b66, #7f9570);
+  background-color: #EFF1EF;
 }
 header .offcanvas .close {
-  color: #EFF1EF;
+  color: #DAD7CD;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
 }
 header .offcanvas .navbar-nav,
 header .offcanvas .reseaux {
@@ -301,7 +372,7 @@ header .offcanvas .navbar-nav {
   }
 }
 header .offcanvas .navbar-nav .nav-item .nav-link {
-  color: #EFF1EF;
+  color: #133613;
   font-size: 25px;
   font-weight: 700;
   transition: 0.5s;
@@ -309,33 +380,30 @@ header .offcanvas .navbar-nav .nav-item .nav-link {
   font-family: "Rajdhani", sans-serif;
 }
 header .offcanvas .navbar-nav .nav-item .nav-link:hover, header .offcanvas .navbar-nav .nav-item .nav-link:focus, header .offcanvas .navbar-nav .nav-item .nav-link:active {
-  color: #7F9570;
+  color: #DAD7CD;
   margin-bottom: 15px;
 }
 header .offcanvas .navbar-nav .reseaux {
   padding-top: 30px;
-  border-top: 3px solid #EFF1EF;
+  border-top: 3px solid #DAD7CD;
 }
 
 .btn {
   font-size: 15px;
   padding: 15px;
   font-weight: 800;
-  width: 250px;
   letter-spacing: 1px;
   transition: all 0.5s ease-in-out;
   font-family: "Aclonica", sans-serif;
 }
 
 .button--one {
-  color: #EFF1EF;
-  background-color: #4A6D4A;
+  color: #7F9570;
+  background-color: #133613;
 }
 .button--one:hover, .button--one:focus, .button--one:active {
-  color: #EFF1EF;
-  border-top: 3px solid #EFF1EF;
-  border-right: 3px solid #EFF1EF;
-  background-color: #133613;
+  color: #133613;
+  background-color: #DAD7CD;
 }
 
 @keyframes gradient {
@@ -350,19 +418,74 @@ header .offcanvas .navbar-nav .reseaux {
   }
 }
 .introduction {
-  height: 880px;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-image: url("../../assets/img/banner/Banner-kahinadev.png");
 }
 @media screen and (max-width: 480px) {
   .introduction {
-    height: 580px;
+    height: 680px;
   }
 }
 .introduction h1 {
-  margin-top: 10%;
+  margin-top: 25%;
 }
 @media screen and (max-width: 480px) {
   .introduction h1 {
-    margin-top: 20%;
+    margin-top: 5% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .introduction h1 {
+    margin-top: 35%;
+  }
+}
+.introduction h1 br {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .introduction h1 br {
+    display: block !important;
+  }
+}
+.introduction .content-intro {
+  width: 30%;
+  right: 0px;
+  margin-top: 24%;
+}
+@media screen and (max-width: 480px) {
+  .introduction .content-intro {
+    width: 80% !important;
+    margin-top: 15% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .introduction .content-intro {
+    width: 60%;
+    margin-top: 52%;
+  }
+}
+
+.about img {
+  height: 680px;
+}
+@media screen and (max-width: 480px) {
+  .about img {
+    height: 320px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about .pd-lg-5 {
+    padding: 0 !important;
+    margin-top: 50px !important;
   }
 }
 

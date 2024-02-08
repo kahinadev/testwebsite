@@ -11,21 +11,6 @@
     webmaster en CDI. Je suis particulièrement intéressée par les opportunités de travail à distance.">
     <meta name="keywords" content="Développeuse web, developpeur web, télétravail, paris, web design, design">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -41,17 +26,19 @@
 </head>
 <body>
     <header id="header" class="fixed-top">
-        <nav class="navbar bg-body-tertiary fixed-top">
+        <nav class="navbar shadow bg-pure">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo/KahinaDev.png"
-                    class="logo" alt="Loog KahinaDev">
-                </a>
-                <button class="toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="toggler-icon">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </span>
-                </button>
+                <div class="infos-nav">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/KahinaDev.png"
+                        class="logo" alt="Loog KahinaDev">
+                    </a>
+                    <button class="toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" 
                 aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -111,23 +98,58 @@
     </header>
 
     <main class="main">
-        <section class="introduction" id="ntroduction">
+        <section class="introduction bg-hope-dark radius" id="introduction">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="pure stroke-light">
-                            Développeuse web 
+                    <div class="col-md-6">
+                        <h1 class="hope-dark stroke-light aos-init aos-animation"
+                        data-aos="fade-down" data-aos-delay="300">
+                            Dévelo<br>ppeuse web 
                         </h1>
-                        <br>
-                        <p class="pure">
-                            Passionnée par la création de site web, le web 
-                            design et par les jeux vidéo.
-                        </p>
-                        <br>
-                        <a href="#propos" 
-                        class="btn button--one shadow bg-hope-medium">
-                            C'est parti !
-                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-pure pd-lg-5 radius content-intro position-absolute end
+                        aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">
+                            <p class="hope-dark">
+                                Passionnée par la création de site web, le web 
+                                design et par les jeux vidéo.
+                            </p>
+                            <br>
+                            <a href="#propos" 
+                            class="btn button--one shadow">
+                                C'est parti !
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="propos">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-8">
+                        <img src="assets/img/section/propos.png"
+                        class="radius max shadow aos-init aos-animation"
+                        data-aos="fade-down" data-aos-delay="300" 
+                        alt="Image à propos">
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="pd-lg-5 aos-init aos-animation"
+                        data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="stroke-dark">
+                                Qui suis-je ?
+                            </h2>
+                            <br>
+                            <p class="hope-medium">
+                                Je m'appelle Kahina Ouali jeune développeuse de 24 ans, 
+                                <strong>motivée</strong>, <strong>créative</strong> et 
+                                <strong>passionnée</strong> par les jeux vidéo. 
+                                <br>
+                                Au cours de ma formation, j'ai acquis plusieurs connaissances 
+                                de langages de programmation ainsi que sur certains framework. 
+                                J'aime créer des interfaces intuitives et esthétiques. 
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,7 +164,6 @@
     crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/93f593ecee.js" 
     crossorigin="anonymous"></script>
-    <script src="assets/js/sidebar.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

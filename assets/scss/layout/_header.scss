@@ -1,37 +1,82 @@
 header {
+    z-index: 99;
     height: 50px;
-    .navbar-brand {
-        .logo {
-            width: 35%;
-        }
-    }
 
-    .toggler {
-        color: $hope-light;
+    .navbar {
+        width: 15%;
+        border-bottom-right-radius: 30px 30px;
 
         @media screen and (max-width: $mobile) {
-            right: 15px;
-            position: fixed;
+            width: 80% !important;
         }
-    }
 
-    .toggler,
-    .close {
-        font-size: 25px;
-        border: $none--border;
-        background-color: transparent;
+        @media screen and (max-width: $tablet-m) {
+            width: 60%;
+        }
+
+        .infos-nav {
+            margin-left: 8%;
+
+            @media screen and (max-width: $mobile) {
+                margin-left: 3% !important;
+            }
+
+            @media screen and (max-width: $tablet-m) {
+                margin-left: 12%;
+            }
+        }
+
+        .navbar-brand {
+            .logo {
+                width: 60%;
+
+                @media screen and (max-width: $tablet-m) {
+                    width: 50%;
+                }
+            }
+        }
+
+        .toggler {
+            display: flex;
+            border: $none--border;
+            cursor: pointer;
+            margin-left: 60%;
+            margin-top: -10%;
+            position: absolute;
+            align-items: center;
+            flex-direction: column;
+            background-color: transparent;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: -9% !important;
+                margin-left: 50% !important;
+            }
+
+            @media screen and (max-width: $tablet-m) {
+                margin-left: 50%;
+                margin-top: -8%;
+            }
+
+            .bar {
+                width: 30px;
+                height: 2px;
+                margin: 2px 0;
+                transition: 0.4s;
+                background-color: $hope-light;
+            }
+        }
     }
 
     .offcanvas {
         border-left: $none--border !important;
         backdrop-filter: blur(30px);
-        background-image: linear-gradient(to right bottom,
-                #4a6d4a, #577753,
-                #64815c, #728b66,
-                #7f9570);
+        background-color: $pure;
 
         .close {
-            color: $pure;
+            color: $beige;
+            font-size: 25px;
+            border: $none--border;
+            background-color: transparent;
         }
 
         .navbar-nav,
@@ -48,7 +93,7 @@ header {
 
             .nav-item {
                 .nav-link {
-                    color: $pure;
+                    color: $hope-dark;
                     font-size: 25px;
                     font-weight: 700;
                     transition: 0.5s;
@@ -58,7 +103,7 @@ header {
                     &:hover,
                     &:focus,
                     &:active {
-                        color: $hope-light;
+                        color: $beige;
                         margin-bottom: 15px;
                     }
                 }
@@ -66,7 +111,7 @@ header {
 
             .reseaux {
                 padding-top: $v-30;
-                border-top: 3px solid $pure;
+                border-top: 3px solid $beige;
             }
         }
     }

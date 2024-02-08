@@ -1,15 +1,68 @@
 .introduction {
-    height: 880px;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-image: url("../../assets/img/banner/Banner-kahinadev.png");
 
     @media screen and (max-width: $mobile) {
-        height: 580px;
+        height: 680px;
     }
 
     h1 {
-        margin-top: 10%;
+        margin-top: 25%;
 
         @media screen and (max-width: $mobile) {
-            margin-top: 20%;
+            margin-top: 5% !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            margin-top: 35%;
+        }
+
+        br {
+            display: none;
+
+            @media screen and (max-width: $mobile) {
+                display: block !important;
+            }
+        }
+    }
+
+    .content-intro {
+        width: 30%;
+        right: 0px;
+        margin-top: 24%;
+
+        @media screen and (max-width: $mobile) {
+            width: 80% !important;
+            margin-top: 15% !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            width: 60%;
+            margin-top: 52%;
+        }
+    }
+}
+
+.about {
+    img {
+        height: 680px;
+
+        @media screen and (max-width: $mobile) {
+            height: 320px !important;
+        }
+
+        @media screen and (max-width: $tablet-m) {
+            height: 400px;
+        }
+    }
+    .pd-lg-5 {
+        @media screen and (max-width: $tablet-m) {
+            padding: 0 !important;
+            margin-top: $v-50 !important;
         }
     }
 }

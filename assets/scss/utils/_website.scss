@@ -12,16 +12,12 @@
 }
 
 body {
-    min-height: 100vh;
-    background: $hope-dark;
-    background: linear-gradient(to bottom right,
-            $hope-dark,
-            #214320,
-            #2E512E,
-            #3C5F3C,
-            $hope-medium,
-        );
-    animation: gradient 15s ease infinite;
+    padding: 0 30px;
+    background-color: $pure;
+
+    @media screen and (max-width: $mobile) {
+        padding: 0 15px;
+    }
 }
 
 img {
@@ -32,6 +28,6 @@ section {
     padding: 120px 0px;
 
     @media screen and(max-width: $mobile) {
-        padding: 120px 10px;
+        padding: 140px 0px;
     }
 }

@@ -2,22 +2,19 @@
     font-size: $v-15;
     padding: $v-15;
     font-weight: 800;
-    width: 250px;
     letter-spacing: 1px;
     transition: all 0.5s ease-in-out;
     font-family: $title;
 }
 
 .button--one {
-    color: $pure;
-    background-color: $hope-medium;
+    color: $hope-light;
+    background-color: $hope-dark;
 
     &:hover,
     &:focus,
     &:active {
-        color: $pure;
-        border-top: 3px solid $pure;
-        border-right: 3px solid $pure;
-        background-color: $hope-dark;
+        color: $hope-dark;
+        background-color: $beige;
     }
 }
